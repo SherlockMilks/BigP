@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+    background-image: url("../img/background.jpg");
+    background-repeat: round;
+}
+
+main {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ece8e8;
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: "Poppins",sans-serif;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h1 {
+    background-color: rgba(230, 236, 255, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Rowdies", sans-serif;
+    font-size: 4.5em;
+    color: #945012;
+    padding: 20px;
+    text-shadow: 5px 5px 1px rgba(9, 8, 8, 0.2);
+    box-shadow: 0 4px 6px rgba(250, 250, 250, 0.3);
+}
+
+.textbox {
+    border: #000000 solid 7px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(39, 39, 39, 0.8);
+    color: #dcbf8a;
+}
+
+.textbox h2 {
+    margin-top: 5px;
+}
+
+/*Menű*/
+
+#menu-cim{
+    color: #dcbf8a;
+    font-size: 2.5em;
+    font-family: "Rowdies", sans-serif;
+    text-shadow: 5px 5px 1px rgba(9, 8, 8, 0.2);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.menu{
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.hambi{
+    width: 32%;
+    border-radius: 20px;
+    margin: 20px 0 20px 15px;
+    box-shadow: 5px 5px 3px black;
+    border: #000000 solid 3px;
+    background-color: rgba(39, 39, 39, 0.8);
+    color: #dcbf8a;
+}
+
+h3{
+    margin-left: 15px;
+}
+
+.hambi img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hambi img:hover{
+    transform: scale(1.05);
+}
+
+.flex_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hambi-description{
+    float: right;
+    text-align: left;
+}
+
+.hambi p{
+    margin-left: 10px;
+}
+
+.hambi li{
+    list-style: none;
+}
+
+.order{
+    margin: auto;
+    text-align: center;
+}
+
+.order p{
+    font-size: larger;
+    color: #dcbf8a;
+}
+
+.order input{
+    background-color: #d49d0f;
+    box-shadow: 3px 3px 3px black;
+    transition: transform 0.3s ease;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.order input:hover{
+    transform: scale(1.05);
+}
+
+.order input:active{
+    background-color: #8e680a;
+}
+
+/*Kosár*/
+
+.kosar-db{
+    width: 90%;
+    border-radius: 20px;
+    margin: auto auto 30px;
+    box-shadow: 5px 5px 3px black;
+    border: #000000 solid 3px;
+    background-color: rgba(39, 39, 39, 0.8);
+    color: #dcbf8a;
+}
+
+.kosar-db>.flex_box{
+    width: 80%;
+}
+
+.img_container img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50px;
+    border: solid 2px #d49d0f;
+    background-color: #dcbf8a;
+}
+
+.egyedihambi_img{
+    margin-left: 90px;
+    margin-right: 100px;
+}
+
+.opperation-buttons{
+    margin: auto;
+    float: right;
+    width: 75%;
+}
+
+.plus-minus{
+    border: none;
+    background-color: transparent;
+    font-size: x-large;
+    color: #d49d0f;
+    scale: 150%;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.plus-minus:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    text-shadow: black 1px 1px 3px;
+}
+
+.plus-minus:active{
+    color: #8e680a;
+}
+
+.delete{
+    width: 25%;
+    float: right;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.delete input{
+    border: none;
+    border-radius: 10px;
+    font-size: x-large;
+    background-color: #d49d0f;
+    margin-right: 25px;
+    padding: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 3px 3px 3px black;
+}
+
+.delete input:active{
+    background-color: #8e680a;
+}
+
+.delete input:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.kosar-description{
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
+
+.mennyiseg_allitas{
+    width: 60%;
+    float: left;
+}
+
+.mennyiseg{
+    scale: 150%;
+    border: 1px solid rgba(255, 255, 255, 0.528);
+    color: #d49d0f;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+.behuzas{
+    margin-left: 30%;
+}
+
+#megrendeles{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(39, 39, 39, 0.8);
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#megrendeles input[type="submit"]{
+    margin: auto;
+    background-color: #d49c0f;
+    box-shadow: 3px 3px 3px black;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#megrendeles input[type="submit"]:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#megrendeles input[type="submit"]:active{
+    background-color: #8e680a;
+}
+
+#megrendeles p{
+    font-size: larger;
+    color: #dcbf8a;
+    margin-right: 30px;
+}
+
+.sikeres{
+    text-align: center;
+    color: green;
+}
+
+.hiba{
+    text-align: center;
+    color: red;
+}
+
+.ureskosar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #000000 solid 7px;
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;
+    margin: 10% auto auto;
+    background-color: rgba(39, 39, 39, 0.8);
+    color: #dcbf8a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media print{
+    img{
+        display: none;
+    }
+    .order button{
+        display: none;
+    }
+    .hambi{
+        width: 40%;
+    }
+    #menu-cim{
+        color: black;
+    }
+}
+
+@media (max-width: 1865px) {
+    /*Menu*/
+    .hambi {
+        width: 40%;
+    }
+
+    .hambi:nth-child(even) {
+        margin-left: 15%;
+    }
+
+    /*Kosár*/
+    .img_container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .egyedihambi_img {
+        margin: 0;
+    }
+
+    .kosar-db {
+        width: 100%;
+        text-align: center;
+    }
+
+    .opperation-buttons,
+    .delete,
+    .kosar-description,
+    .mennyiseg_allitas {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .behuzas {
+        margin-left: 0;
+    }
+
+    .kosar-db > .flex_box {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .hambi {
+        width: 100%;
+        margin-left: 0;
+    }
+    .hambi:nth-child(even){
+        margin-left: 0;
+    }
+}
+

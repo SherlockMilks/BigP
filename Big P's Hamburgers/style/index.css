@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Rowdies:wght@300;400;700&display=swap');
+
+body{
+    background-image: url("../img/background.jpg");
+    background-repeat: round;
+}
+
+main {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ece8e8;
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: "Poppins",sans-serif;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h1 {
+    background-color: rgba(230, 236, 255, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Rowdies", sans-serif;
+    font-size: 4.5em;
+    color: #945012;
+    padding: 20px;
+    text-shadow: 5px 5px 1px rgba(9, 8, 8, 0.2);
+    box-shadow: 0 4px 6px rgba(250, 250, 250, 0.3);
+}
+
+.textbox {
+    border: #000000 solid 7px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(39, 39, 39, 0.8);
+    color: #dcbf8a;
+}
+
+.textbox h2 {
+    margin-top: 5px;
+}
+
+hr {
+    border-color: #333;
+}
+
+#bevezetocontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#bevezeto-szoveg{
+    width: 45%;
+    margin-right: 10%;
+}
+
+.slideshow{
+    width: 35%;
+}
+
+#elerhetosegcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#elerhetoseg-felsorolas{
+    width: 40%;
+    top:0;
+}
+
+#elerhetoseg-felsorolas li{
+    padding: 20px;
+}
+
+#facebook{
+  text-align: center;
+}
+
+#facebook p{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#elerhetoseg-terkep{
+    width: 55%;
+    float: right;
+    margin-right: 15px;
+}
+
+#facelogo{
+    width: 20%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+#facelogo:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 10px #054391;
+}
+
+iframe{
+    width:100%;
+    height:500px;
+    margin: auto;
+    border: dimgray 10px solid;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+
+/*Slideshow*/
+.slideshow-img {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlide {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: black;
+    background-color: rgba(105, 105, 105, 0.5);
+    border-radius: 200px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(248, 245, 245,0.8);
+}
+
+.slideShow-text {
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 4px 4px 10px #e6ecff;
+    font-size: 30px;
+    padding: 1px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*Slideshow vege*/
+
+@media (max-width: 1080px) {
+    main {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    .textbox {
+        font-size: 0.8em;
+    }
+
+    .slideshow,
+    #elerhetoseg-terkep {
+        width: 80%;
+        margin: auto;
+        float: none;
+    }
+
+    #bevezeto-szoveg,
+    #elerhetoseg-felsorolas {
+        width: 100%;
+        margin-right: 10px;
+    }
+}
+
+
+@media print{
+    .textbox{
+        color: black;
+        background-color: white;
+        border: #000000 solid 3px;
+    }
+    .body{
+        background-image: none;
+        font-size: 11pt;
+    }
+    h1{
+        color: black;
+    }
+    img{
+        display: none;
+    }
+    .slideshow{
+        display: none;
+    }
+    #bevezeto-szoveg{
+        width: 100%;
+        margin-right: 0;
+    }
+    #elerhetoseg-terkep{
+        display: none;
+    }
+}
+
+
+
+

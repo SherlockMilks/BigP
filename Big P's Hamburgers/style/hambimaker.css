@@ -1,0 +1,189 @@
+body{
+    background-image: url("../img/background.jpg");
+    background-repeat: round;
+}
+
+main {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #ece8e8;
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: "Poppins",sans-serif;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h1 {
+    background-color: rgba(230, 236, 255, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Rowdies", sans-serif;
+    font-size: 4.5em;
+    color: #945012;
+    padding: 20px;
+    text-shadow: 5px 5px 1px rgba(9, 8, 8, 0.2);
+    box-shadow: 0 4px 6px rgba(250, 250, 250, 0.3);
+}
+
+.textbox {
+    border: #000000 solid 7px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(39, 39, 39, 0.8);
+    color: #dcbf8a;
+}
+
+.textbox h2 {
+    margin-top: 5px;
+}
+
+.flex_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobb{
+    float: right;
+    width: 45%;
+}
+
+.jobb > p{
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #dcbf8a;
+    color: black;
+    border-radius: 20px;
+}
+
+.bal{
+    position: fixed;
+    width: 45%;
+}
+
+.button_kosar{
+    background-color: #d49c0f;
+    font-size: x-large;
+    box-shadow: 3px 3px 3px black;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.button_kosar:hover{
+    cursor: pointer;
+    transform: scale(1.05);;
+}
+
+.button_kosar:active{
+    background-color: #8e680a;
+}
+
+.button_container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: larger;
+    color: #dcbf8a;
+    margin: 0 30px 10px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mennyiseg{
+    scale: 150%;
+    border: 1px solid rgba(255, 255, 255, 0.528);
+    color: #d49d0f;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+.hambi_img{
+    max-width: 400px;
+    max-height: 400px;
+    float: left;
+    background-color: #dcbf8a;
+    border-radius: 50px;
+    border: solid 2px #d49d0f;
+}
+
+.alapanyag{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+
+@media print{
+    .gomb_absolute{
+        position: relative;
+    }
+    .gomb_absolute input{
+        display: none;
+    }
+    .bal{
+        position: relative;
+        width: 35%;
+        float: left;
+    }
+}
+
+@media (max-width: 1400px) {
+    .bal{
+        position: relative;
+    }
+
+    .jobb,
+    .bal {
+        width: 90%;
+        float: none;
+    }
+
+    .textbox{
+        margin-left: 0;
+        font-size: 0.8em;
+    }
+
+    .textbox ul{
+        font-size: 30px;
+        text-align: center;
+        list-style: none;
+
+    }
+
+    .hambi_img{
+        margin: auto;
+    }
+
+    .button_container{
+        position: relative;
+        margin: auto;
+    }
+
+    .mennyiseg{
+        margin-top: 10px;
+    }
+
+
+
+
+}

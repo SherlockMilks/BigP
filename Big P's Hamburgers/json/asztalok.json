@@ -1,0 +1,104 @@
+{
+    "asztalok": [
+        {
+            "id": "T1",
+            "helyek": 4,
+            "foglalasok": []
+        },
+        {
+            "id": "T2",
+            "helyek": 7,
+            "foglalasok": []
+        },
+        {
+            "id": "T3",
+            "helyek": 9,
+            "foglalasok": []
+        },
+        {
+            "id": "T4",
+            "helyek": 3,
+            "foglalasok": []
+        },
+        {
+            "id": "T5",
+            "helyek": 6,
+            "foglalasok": []
+        },
+        {
+            "id": "T6",
+            "helyek": 8,
+            "foglalasok": []
+        },
+        {
+            "id": "T7",
+            "helyek": 5,
+            "foglalasok": []
+        },
+        {
+            "id": "T8",
+            "helyek": 2,
+            "foglalasok": []
+        },
+        {
+            "id": "T9",
+            "helyek": 4,
+            "foglalasok": []
+        },
+        {
+            "id": "T10",
+            "helyek": 7,
+            "foglalasok": []
+        },
+        {
+            "id": "T11",
+            "helyek": 10,
+            "foglalasok": []
+        },
+        {
+            "id": "T12",
+            "helyek": 5,
+            "foglalasok": []
+        },
+        {
+            "id": "T13",
+            "helyek": 3,
+            "foglalasok": []
+        },
+        {
+            "id": "T14",
+            "helyek": 8,
+            "foglalasok": []
+        },
+        {
+            "id": "T15",
+            "helyek": 6,
+            "foglalasok": []
+        },
+        {
+            "id": "T16",
+            "helyek": 2,
+            "foglalasok": []
+        },
+        {
+            "id": "T17",
+            "helyek": 4,
+            "foglalasok": []
+        },
+        {
+            "id": "T18",
+            "helyek": 7,
+            "foglalasok": []
+        },
+        {
+            "id": "T19",
+            "helyek": 9,
+            "foglalasok": []
+        },
+        {
+            "id": "T20",
+            "helyek": 10,
+            "foglalasok": []
+        }
+    ]
+}

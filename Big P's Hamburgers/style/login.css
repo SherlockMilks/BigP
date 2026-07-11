@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: round;
+}
+
+.login-container-register,
+.login-container{
+    width: 300px;
+    padding: 20px;
+    background-image: url("../img/loginbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family:"Poppins",serif;
+}
+
+.profile-container {
+    max-width: 80%;
+    height: 600px;
+    padding: 20px;
+    background-image: url("../img/loginbackground.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    margin: 200px auto;
+    position: relative;
+}
+
+.flex_box{
+    display: flex;
+}
+
+.profile-container h2{
+    font-size: 30px;
+}
+
+.profile-container p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.profile-info{
+    width: 33%;
+}
+
+.foglalasok{
+    font-size: 12px;
+    margin-left: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.foglalasok input[type="submit"]{
+    box-shadow: none;
+    width: 7px;
+    background-color: transparent;
+    color: red;
+    font-size: large;
+    margin: 0;
+}
+
+.foglalasok input[type="submit"]:hover{
+    color:darkred;
+    cursor: pointer;
+    transform:none;
+}
+
+.foglalasok input[type="submit"]:active{
+    background-color: transparent;
+}
+
+.login-container{
+    margin: 300px auto;
+}
+
+.login-container-register{
+    margin: 100px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+#gomb{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #d49d0f;
+    box-shadow: 3px 3px 3px black;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    font-family:"Poppins",serif;
+    font-size: 15px;
+}
+
+#gomb{
+    display: inline-block;
+    width: 94%;
+    text-decoration: none;
+    line-height: 25px;
+    text-align: center;
+    height: 20px;
+}
+
+.profile_button{
+    width:10%;
+    height: 40px;
+    padding-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #d49d0f;
+    box-shadow: 3px 3px 3px black;
+    margin: 150px 10px;
+    transition: transform 0.3s ease;
+    font-family:"Poppins",serif;
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+}
+
+a[href="function/acc_delete.php"]{
+    float: left;
+}
+
+input[type=checkbox]{
+    width: 50px;
+    margin-left: 10px;
+
+}
+
+input[type="submit"]:hover,
+#gomb:hover,
+.profile_button:hover{
+    transform:scale(1.05);
+}
+
+input[type="submit"]:active,
+#gomb:active,
+.profile_button:active{
+    background-color: #8e680a;
+}
+
+.toggle-password {
+    cursor: pointer;
+    float: right;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: auto;
+}
+
+.hiba{
+    text-align: center;
+    font-size: 11pt;
+    color: red;
+}
+
+
+
+

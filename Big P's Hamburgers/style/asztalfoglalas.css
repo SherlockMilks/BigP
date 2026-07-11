@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Rowdies:wght@300;400;700&display=swap');
+
+body {
+    background-size: cover;
+    animation: hatter 10s  infinite cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+}
+
+@keyframes hatter {
+    0% {
+        background-image: url('../img/étterem1.jpg');
+    }
+    33.33% {
+        background-image: url('../img/étterem2.jpg');
+    }
+    66.66% {
+        background-image: url('../img/étterem3.jpg');
+    }
+    100% {
+        background-image: url('../img/étterem1.jpg');
+    }
+}
+
+main{
+    width: 80%;
+    max-width: 1000px;
+    min-height: 100vh;
+    background-color: rgb(230, 236, 255, 0.8);
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Poppins",sans-serif;
+    color: black;
+}
+
+h1{
+    color: #945012;
+    font-size: 3.5em;
+    font-family: "Rowdies", sans-serif;
+    text-shadow: 5px 5px 1px rgba(9, 8, 8, 0.2);
+}
+
+h2{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+ul{
+    margin-top: 1px;
+    list-style-type: none;
+}
+
+li{
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 50px;
+    background-color: #626060;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+td{
+    color: wheat;
+}
+
+th {
+    background-color: #d49c0f;
+}
+
+input[class="lefoglal"]{
+    background-color: #d49d0f;
+    box-shadow: 3px 3px 3px black;
+    transition: transform 0.3s ease;
+    width: 40%;
+    max-width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    background-color: #d49d0f;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+input[class="lefoglal"]:hover,
+input[type="submit"]:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+input[class="lefoglal"]:active,
+input[type="submit"]:active{
+    background-color: #8e680a;
+}
+
+.hiba{
+    text-align: center;
+    font-size: 11pt;
+    color: red;
+}
+
+@media print{
+    .lefoglal{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    button[class="lefoglal"]{
+        margin: auto;
+    }
+
+}
